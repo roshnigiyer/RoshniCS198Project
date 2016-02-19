@@ -4,17 +4,18 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 0, lng: 0},
     zoom: 3
-    // Create a heatmap.
-  var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: [],
-    map: map,
-    radius: 8
   });
-});
 
   // Add marker on user click
   map.addListener('click', function(e) {
     firebase.push({lat: e.latLng.lat(), lng: e.latLng.lng()});
+  });
+
+  // Create a heatmap.
+  var heatmap = new google.maps.visualization.HeatmapLayer({
+    data: [],
+    map: map,
+    radius: 8
   });
 
   firebase.on("child_added", function(snapshot, prevChildKey) {
@@ -25,11 +26,7 @@ function initMap() {
     // A LatLng object literal (as above) could be used, but the heatmap
     // in the next step requires a google.maps.LatLng object.
     var latLng = new google.maps.LatLng(newPosition.lat, newPosition.lng);
-
-    // Place a marker at that location.
-    var marker = new google.maps.Marker({
-      position: latLng,
-      map: map
-    });
+    
+    heatmap.getData().push(latLng);
   });
 }
