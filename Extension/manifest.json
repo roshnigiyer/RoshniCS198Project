@@ -1,0 +1,15 @@
+{
+	"name": "Tutorialzine Extension",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "Making your first Google Chrome extension.",
+	"browser_action":	{
+		"default_popup": "example.html"
+	},
+	"content_scripts": [
+		{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["script.js"]
+		}
+	]
+}
