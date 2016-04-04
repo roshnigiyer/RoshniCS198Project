@@ -6,10 +6,19 @@
 	"browser_action":	{
 		"default_popup": "example.html"
 	},
+	"oauth2": {
+	    "client_id": "233682037694-7f54g8p4jsj10tdi1hvbakjo41ctkqdf.apps.googleusercontent.com",
+	    "scopes": [
+	      "https://www.googleapis.com/auth/drive"
+	    ]
+  	},
 	"content_scripts": [
 		{
 		"matches": ["http://*/*", "https://*/*"],
 		"js": ["script.js"]
 		}
+	],
+	"permissions": [
+  		"identity"
 	]
 }
