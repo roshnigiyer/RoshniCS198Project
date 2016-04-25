@@ -1,8 +1,8 @@
 {
-	"name": "Tutorialzine Extension",
+	"name": "Netflix&Chat",
 	"manifest_version": 2,
 	"version": "1.0",
-	"description": "Making your first Google Chrome extension.",
+	"description": "Chat and watch Netflix with friends!",
 	"browser_action":	{
 		"default_popup": "example.html"
 	},
