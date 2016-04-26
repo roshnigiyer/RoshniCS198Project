@@ -1,6 +1,6 @@
 {
-  "name": "Stylizr",
-  "description": "Spruce up your pages with custom CSS.",
+  "name": "Netflix&Chill",
+  "description": "Talk to your friends and watch movies together!",
   "version": "1.0",
 
   "permissions": [
@@ -12,7 +12,7 @@
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_title": "Stylize!",
+    "default_title": "Watch!",
     "default_popup": "popup.html"
   },
 

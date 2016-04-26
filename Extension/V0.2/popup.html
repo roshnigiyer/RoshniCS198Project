@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
   <head>
     <title>Stylizr</title>
@@ -8,8 +8,14 @@
         width: 200px;
       }
     </style>
+<script language="javascript">
+  function resizePage() {
+    window.resizeTo(400,390);
+    window.focus();
+  }
+</script> 
   </head>
-  <body>
+  <body onload="resizePage();">
     <div id="message"></div>
     <script src="popup.js"></script>
   </body>
