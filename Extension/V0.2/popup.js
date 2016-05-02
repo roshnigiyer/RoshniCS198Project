@@ -5,5 +5,14 @@
 // Store CSS data in the "local" storage area.
 //
 // See note in options.js for rationale on why not to use "sync".
+window.setTimeout(launchHangout, 1000);
 
-window.open("https://plus.google.com/hangouts/_/yrxui6qyxnhqvgzy3sdhpc5tqae");
+function launchHangout() {
+	var netflix = window.open("http://netflix.com");
+	netflix.onLoad = function(){openHangout()};
+}
+
+function openHangout() {
+	window.open("https://plus.google.com/hangouts/_/yrxui6qyxnhqvgzy3sdhpc5tqae","_parent","height=window.height-100");
+}
+
