@@ -6,3 +6,4 @@
 //
 // See note in options.js for rationale on why not to use "sync".
 
+window.open("https://plus.google.com/hangouts/_/yrxui6qyxnhqvgzy3sdhpc5tqae");
