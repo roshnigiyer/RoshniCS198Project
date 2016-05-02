@@ -8,7 +8,7 @@
 window.setTimeout(launchHangout, 1000);
 
 function launchHangout() {
-	var netflix = window.open("http://netflix.com");
+	var netflix = window.open("https://plus.google.com/hangouts/_/yrxui6qyxnhqvgzy3sdhpc5tqae","_parent","height=window.height-100");
 	netflix.onLoad = function(){openHangout()};
 }
 
